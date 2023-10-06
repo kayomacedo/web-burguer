@@ -1,0 +1,741 @@
+/*Monitor padrão*/
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.menu-telefone{
+    display: none;
+}
+
+body {
+    background-color: #F7EBB7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+a {
+    color: black;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: #ffdb58;
+
+}
+
+
+hr {
+    border-color: #ffee99;
+    border-width: 2px;
+    opacity: 0.3;
+}
+
+.esquerdo {
+    width: 33%;
+
+}
+
+.menu-esquerda {
+
+    width: 33%;
+
+    text-align: center;
+
+}
+
+header ul {
+    display: flex;
+    margin-right: -50px;
+    margin-top: 70px;
+    gap: 15px;
+    list-style: none;
+    font-size: 20px;
+
+
+}
+
+.direita {
+    width: 33%;
+}
+
+.logo-icon {
+    width: 250px;
+    height: auto;
+    margin-top: 5px;
+
+
+}
+
+
+
+footer {
+
+
+    background-color: #ffdb58;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    /* Fixa o footer na parte inferior da página */
+    width: 100%;
+    /* Define a largura do footer como 100% */
+    bottom: 0;
+    /* Coloca o footer no fundo da página */
+
+
+}
+
+footer ul {
+
+    margin-left: -20px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+
+}
+
+.bloco-footer {
+    display: block;
+}
+
+
+
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.cards h2 {
+    text-align: start;
+    margin-left: 10px;
+}
+
+.cards ul {
+    text-align: start;
+    margin-left: 25px;
+}
+
+.cards img {
+    width: 365px;
+
+    margin-top: -230px;
+    margin-left: -30px;
+    height: 300px;
+    border-radius: 15px;
+    transition: 300ms
+}
+
+.cards img:hover {
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.combo-card img {
+    width: 365px;
+    border-radius: 15px;
+    margin-top: -150px;
+    margin-left: -30px;
+
+}
+
+
+
+
+.card {
+    background-color: #f9e085;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+    height: 200px;
+    overflow: hidden;
+
+}
+
+h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+
+
+
+.selection-about {
+    margin-top: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.selection-contato {
+    margin-top: 50px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.div-sobre-wrapper {
+
+
+    height: 340px;
+    background-image: url('../assets/bg.png');
+    /* Substitua 'seu_background.jpg' pelo caminho para sua imagem de fundo */
+    opacity: 0.2;
+
+}
+
+.destaques-title {
+    margin-top: 100px;
+    text-align: center;
+
+    color: #413E31;
+    margin-bottom: 25PX;
+    font-size: 20PX;
+}
+
+
+.sobre-text-form {
+    margin-top: -400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+
+
+}
+.box-contato {
+    margin-right: 0;
+    margin-top: 40px;
+    background-color: #F9EFC5;
+    padding: 50px;
+    height: 200px;
+    width: 330px;
+
+
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.info h3 {
+    margin-bottom: 10px;
+}
+
+
+.info {
+
+    margin-top: -90px;
+
+    margin-right: -150px;
+    width: 40%;
+    height: 250px;
+    text-align: justify;
+    background-color: #F9EFC5;
+    padding: 40px;
+
+}
+
+.message-contato {
+    display: flex;
+    margin-bottom: 150px;
+    justify-content: center;
+}
+
+
+.box-contato input {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.box-contato textarea {
+    width: 300px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+
+.box-contato .input-nome {
+    
+    margin-bottom: 5px;
+
+
+}
+
+.box-contato .input-email {
+    margin-bottom: 5px;
+}
+
+.box-contato button {
+    margin-top: 5px;
+    margin-left: 90px;
+    width: 130px;
+    border-radius: 2px;
+}
+
+
+.imagem-promocao {
+
+    display: flex;
+    justify-content: end;
+}
+
+.imagem-promocao img {
+    width: 150px;
+    margin-right: 190px;
+    margin-top: -55px;
+}
+
+
+
+
+
+
+
+/*  monitor maior*/
+
+
+@media screen and (min-width: 1500px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        text-decoration: none;
+    }
+    .menu-telefone{
+        display: none;
+    }
+    a:hover {
+        color: red;
+    }
+
+    body {
+        background-color: #F7EBB7;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+
+    a {
+        color: black;
+
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100px;
+        background-color: #ffdb58;
+
+    }
+
+
+    hr {
+        border-color: #ffee99;
+        border-width: 2px;
+        opacity: 0.3;
+    }
+
+    .esquerdo {
+
+        width: 33%;
+    }
+
+    .menu-esquerda {
+
+
+        width: 33%;
+
+        text-align: center;
+
+    }
+
+    .direita {
+        width: 33%;
+
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+    header ul {
+        display: flex;
+
+        margin-right: 25px;
+
+        gap: 15px;
+        list-style: none;
+        font-size: 22px;
+        margin-bottom: 50px;
+        margin-right: 80px;
+
+    }
+
+
+    .logo-icon {
+        width: 250px;
+        height: auto;
+        margin-top: 5px;
+
+
+    }
+
+
+
+    footer {
+
+
+        background-color: #ffdb58;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: fixed;
+        /* Fixa o footer na parte inferior da página */
+        width: 100%;
+        /* Define a largura do footer como 100% */
+        bottom: 0;
+        /* Coloca o footer no fundo da página */
+
+
+    }
+
+    footer ul {
+
+        margin-left: -20px;
+        list-style: none;
+        display: flex;
+        gap: 30px;
+
+
+    }
+
+    .bloco-footer {
+        display: block;
+    }
+
+
+
+
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+
+    .cards h2 {
+        text-align: start;
+        margin-left: 10px;
+    }
+
+    .cards ul {
+        text-align: start;
+        margin-left: 25px;
+
+    }
+
+    .cards img {
+        width: 365px;
+
+        margin-top: -230px;
+        margin-left: -30px;
+        height: 250px;
+        border-radius: 15px;
+        transition: 300ms
+    }
+
+    .cards img:hover {
+        opacity: 0;
+        transform: scale(1.2);
+    }
+
+    .combo-card img {
+        width: 365px;
+        border-radius: 15px;
+        margin-top: -150px;
+        margin-left: -30px;
+
+    }
+
+
+
+
+    .card {
+        background-color: #f9e085;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        text-align: center;
+        height: 200px;
+        overflow: hidden;
+
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+
+
+
+    .selection-about {
+        margin-top: 50px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .selection-contato {
+        margin-top: 50px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .div-sobre-wrapper {
+
+    
+        height: 340px;
+        background-image: url('assets/bg.png');
+        /* Substitua 'seu_background.jpg' pelo caminho para sua imagem de fundo */
+        opacity: 0.2;
+
+    }
+
+    .destaques-title {
+        margin-top: 100px;
+        text-align: center;
+
+        color: #413E31;
+        margin-bottom: 25PX;
+        font-size: 20PX;
+    }
+
+
+    .sobre-text-form {
+        margin-top: -400px;
+        margin-left: -220px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        
+    }
+
+    .box-contato {
+        margin-right: 0;
+        margin-top: 40px;
+        background-color: #F9EFC5;
+        padding: 50px;
+        height: 200px;
+        width: 330px;
+
+
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+   
+
+    .info h3 {
+        margin-bottom: 10px;
+        
+    }
+
+
+    .info {
+
+        margin-top: -90px;
+        
+
+        width: 19%;
+        height: 250px;
+        text-align: justify;
+        background-color: #F9EFC5;
+        padding: 40px;
+
+    }
+
+    .message-contato {
+        display: flex;
+        margin-bottom: 150px;
+        justify-content: center;
+    }
+
+
+    .box-contato input {
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    .box-contato textarea {
+        width: 300px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+
+
+    .box-contato .input-nome {
+        margin-left: 0;
+        margin-bottom: 5px;
+
+
+    }
+
+    .box-contato .input-email {
+        margin-bottom: 0;
+    }
+
+    .box-contato button {
+        margin-top: 5px;
+        margin-left: 90px;
+        width: 130px;
+        border-radius: 2px;
+    }
+
+
+    .imagem-promocao {
+
+        display: flex;
+        justify-content: end;
+    }
+
+    .imagem-promocao img {
+        width: 150px;
+        margin-right: 120px;
+        margin-top: -55px;
+    }
+    
+
+}
+
+/*Mobile*/
+
+   @media screen and (max-width: 768px) {
+    .esquerdo{
+        display: none;
+    }
+
+        header{
+            display: flex;
+            justify-content: center;
+
+        }
+        header ul{
+            display: none;
+        }
+
+     
+
+        .menu-telefone{
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            
+        }
+        .menu-telefone ul{
+            display: flex;
+            gap: 20px;
+        }
+
+
+
+        .selection-about{
+            display: block;
+        }
+        .contato-form{
+            display: block;
+        }
+        .box-contato{
+            display: block;
+            margin-left: 300px;
+        }
+        .info{
+            display: block;
+            width: 300px;
+        }
+        .sobre-text-form{
+            display: block;
+            width: 50px;
+            
+        }
+        .box-contato .input-text{
+            width: 300px;
+         
+        }
+      
+        .box-contato .input-nome{
+            margin-left: 0;
+        }
+
+       
+        .box-botao{
+            display: flex;
+            margin-top: 10px;
+            justify-content: start;
+            text-align: start;
+            margin-left: 0px;
+        }
+        
+       
+        }
